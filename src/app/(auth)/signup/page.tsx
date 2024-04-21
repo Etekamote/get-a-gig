@@ -6,7 +6,7 @@ import StepOne from "./_components/step-one";
 import StepTwo from "./_components/step-two";
 
 export default function Page() {
-  const [page, setPage] = useState(2);
+  const [page, setPage] = useState(1);
 
   return (
     <main className="min-h-screen  flex flex-col gap-y-4 justify-center items-center py-8">

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Kanit } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Logo from "@/components/logo";
+import Link from "next/link";
 
 const kanit = Kanit({
   weight: "400",
@@ -19,8 +20,12 @@ export default function Home() {
         opportunities tailored to your skills.
       </p>
       <div className="space-x-8">
-        <Button variant="purple">Sign Up</Button>
-        <Button variant="purpleReverse">Log In</Button>
+        <Button variant="purpleReverse" asChild>
+          <Link href="/login">Log In</Link>
+        </Button>
+        <Button variant="purple" asChild>
+          <Link href="/signup">Sign Up</Link>
+        </Button>
       </div>
     </main>
   );

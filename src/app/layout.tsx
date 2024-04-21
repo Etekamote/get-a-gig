@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-gradient-to-tr from-indigo-800 to-black",
+          "bg-gradient-to-tr from-indigo-800 to-black text-white",
           inter.className
         )}
       >

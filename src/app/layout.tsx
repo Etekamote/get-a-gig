@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "../lib/utils";
+import Container from "@/components/container";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,14 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "bg-gradient-to-tr from-indigo-800 to-black text-white",
-          inter.className
-        )}
-      >
-        {children}
-      </body>
+      <body className={cn("text-white", inter.className)}>{children}</body>
     </html>
   );
 }
